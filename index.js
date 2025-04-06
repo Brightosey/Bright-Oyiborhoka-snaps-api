@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5050;
 const CORS_ORIGIN = process.env.CORS_ORIGIN;
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: "https://bright-oyiborhoka-snaps.vercel.app" }));
 app.use(express.json());
 app.use(express.static("public"));
 
